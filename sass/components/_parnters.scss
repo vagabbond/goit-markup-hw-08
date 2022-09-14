@@ -1,0 +1,39 @@
+.partner {
+  &-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &-link {
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid $icon-main-color;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $icon-main-color;
+    fill: currentColor;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-link {
+    &:hover,
+    &:focus {
+      border-color: $second-color;
+      color: $second-color;
+      fill: currentColor;
+    }
+  }
+}
+.partner-list {
+  display: flex;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
