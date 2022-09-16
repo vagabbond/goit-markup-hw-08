@@ -1,33 +1,33 @@
 .offer {
   background-color: $background-color;
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 118px 60px;
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 1600px;
+  background-size: cover;
+  max-width: 1600px;
   &-conteiner {
-    width: 1600px;
     margin-right: auto;
     margin-left: auto;
   }
   &-title {
     color: $white-color;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    width: 696px;
+    font-size: 26px;
+    line-height: calc(42 / 26);
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
 
     margin-left: auto;
     margin-right: auto;
-
-    text-transform: uppercase;
   }
 
   &-btn {
-    width: 216px;
+    width: 200px;
     height: 50px;
     font-family: inherit;
     color: $white-color;
@@ -40,7 +40,7 @@
     border-radius: 4px;
     border-color: transparent;
 
-    margin-top: 40px;
+    margin-top: 30px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }

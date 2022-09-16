@@ -1,8 +1,9 @@
 .social-footer {
+  margin-bottom: 60px;
   &__title {
+    text-align: center;
     text-transform: uppercase;
     color: $white-color;
-    text-align: start;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -29,6 +30,8 @@
   }
   &__list {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 .footer-list__item {

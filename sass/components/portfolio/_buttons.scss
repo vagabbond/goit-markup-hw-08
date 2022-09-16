@@ -1,11 +1,10 @@
 .portfolio-buttons {
   display: flex;
-  justify-content: center;
-  margin-bottom: 56px;
-  margin-right: -8px;
-  &__item:not(:last-child) {
-    margin-right: 8px;
-  }
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 15px 8px;
+
+  margin-bottom: 40px;
 }
 .portfolio-button {
   cursor: pointer;

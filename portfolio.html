@@ -14,32 +14,39 @@
   <body>
     <header class="header">
       <div class="conteiner">
-        <nav class="header-nav">
-          <a href="./index.html" class="nav__logo">Web<span class="nav__logo--color">Studio</span></a>
-          <ul class="nav-links list">
-            <li class="nav-links__item"><a href="./index.html" class="nav-link ">Студія</a></li>
-            <li class="nav-links__item"><a href="./portfolio.html" class="nav-link nav-link--current">Портфоліо</a></li>
-            <li class="nav-links__item"><a href="#" class="nav-link">Контакти</a></li>
+        <a href="./index.html" class="nav__logo">Web<span class="nav__logo--color">Studio</span></a>
+        <button type="button" class="mobile-bnt--open js-open-menu">
+          <svg class="icon-mobile" width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-menu" class="icon-menu"></use>
+          </svg>
+        </button>
+        <div class="navigation">
+          <nav class="header-nav">
+            <ul class="nav-links list">
+              <li class="nav-links__item"><a href="./index.html" class="nav-link nav-link--current">Студія</a></li>
+              <li class="nav-links__item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+              <li class="nav-links__item"><a href="#" class="nav-link">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="nav-contacts list">
+            <li class="nav-contacts__item">
+              <a href="mailto:info@devstudio.com" class="nav-contact" >
+                <svg class="icon-mail" width="16" height="12">
+                  <use href="./images/symbol-defs.svg#icon-mail">
+                </svg>
+                info@devstudio.com
+              </a>
+           </li>
+            <li class="nav-contacts__item">
+              <a href="tel:+380961111111" class="nav-contact">
+                <svg class="icon-telephone" width="10" height="16">
+                  <use href="./images/symbol-defs.svg#icon-telephone">
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
           </ul>
-        </nav>
-        <ul class="nav-contacts list">
-          <li class="nav-contacts__item">
-            <a href="mailto:info@devstudio.com" class="nav-contact" >
-              <svg class="icon-mail" width="16" height="12">
-                <use href="./images/symbol-defs.svg#icon-mail">
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="nav-contacts__item">
-            <a href="tel:+380961111111" class="nav-contact">
-              <svg class="icon-telephone" width="10" height="16">
-                <use href="./images/symbol-defs.svg#icon-telephone">
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main class="portfolio-main">
@@ -60,7 +67,6 @@
                   <img class="gallery-photo"
                     src="./images/imgportfolio1.jpg"
                     alt="Ноутбук"
-                    width="370"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -75,10 +81,9 @@
             <li class="gallery__item">
               <a href="#" class="gallery-reference">
                 <div class="gallery-overlay">
-                  <img
+                  <img class="gallery-photo"
                     src="./images/imgportfolio2.jpg"
                     alt="Два чоловіки грають у баскетбол"
-                    width="370"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -93,10 +98,9 @@
             <li class="gallery__item">
               <a href="#" class="gallery-reference">
                 <div class="gallery-overlay">
-                  <img
+                  <img class="gallery-photo"
                     src="./images/imgportfolio3.jpg"
                     alt="Логотип ресторану"
-                    width="370"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -111,10 +115,9 @@
             <li class="gallery__item">
               <a href="#" class="gallery-reference">
                 <div class="gallery-overlay">
-                  <img
+                  <img class="gallery-photo"
                     src="./images/imgportfolio4.jpg"
                     alt="Навушники"
-                    width="370"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -129,10 +132,9 @@
             <li class="gallery__item">
               <a href="#" class="gallery-reference">
                 <div class="gallery-overlay">
-                  <img
+                  <img class="gallery-photo"
                     src="./images/imgportfolio5.jpg"
                     alt="Дві коробки"
-                    width="370"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -150,7 +152,7 @@
                   <img
                     src="./images/imgportfolio6.jpg"
                     alt="Екран з відкритим веб-сайтом"
-                    width="370"
+                    class="gallery-photo"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -168,7 +170,7 @@
                   <img
                     src="./images/imgportfolio7.jpg"
                     alt="Відкрита книга"
-                    width="370"
+                    class="gallery-photo"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -186,7 +188,7 @@
                   <img
                     src="./images/imgportfolio8.jpg"
                     alt="Цінник"
-                    width="370"
+                    class="gallery-photo"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -204,7 +206,7 @@
                   <img
                     src="./images/imgportfolio9.jpg"
                     alt="Ноутбук"
-                    width="370"
+                    class="gallery-photo"
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                   />
@@ -291,5 +293,48 @@
         </div>
       </div>
     </footer>
+    <div class="mobile-menu js-menu-container" id="mobile-menu">
+      <button type="button" class=" mobile-bnt--close js-close-menu">
+        <svg width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-close_m" class="icon-close_m"></use>
+        </svg>
+      </button>
+      <div class="menu__pos">
+        <nav class="header-nav">
+          <ul class="nav-links list">
+            <li class="nav-links__item"><a href="./index.html" class="nav-link nav-link--current">Студія</a></li>
+            <li class="nav-links__item"><a href="./portfolio.html" class="nav-link">Портфоліо</a></li>
+            <li class="nav-links__item"><a href="#" class="nav-link">Контакти</a></li>
+          </ul>
+        </nav>
+        <div>
+          <ul class="nav-contacts list">
+            <li class="nav-contacts__item">
+              <a href="mailto:info@devstudio.com" class="nav-contact" >
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="nav-contacts__item">
+              <a href="tel:+380961111111" class="nav-contact">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="mobile-social list">
+            <li class="mobile-social__item"> <a href="#" class="social__link">Instagram</a></li>
+            <li class="mobile-social__item"> <a href="#" class="social__link">Twitter</a></li>
+            <li class="mobile-social__item"> <a href="#" class="social__link">Facebook</a></li>
+            <li class="mobile-social__item"> <a href="#" class="social__link">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

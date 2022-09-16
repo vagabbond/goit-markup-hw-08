@@ -6,7 +6,7 @@
 
     background-color: transparent;
 
-    width: 358px;
+    width: 100%;
     height: 50px;
 
     padding-left: 16px;
@@ -22,11 +22,8 @@
     }
   }
 
-  &__list {
-    margin-left: 93px;
-  }
-
   &__title {
+    text-align: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -39,7 +36,7 @@
   &__btn {
     cursor: pointer;
 
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
 
@@ -56,6 +53,8 @@
     line-height: 1.8;
     letter-spacing: 0.06em;
     color: $white-color;
+
+    margin-top: 20px;
     &:hover,
     &:focus {
       background-color: $bnt-hover-color;
@@ -63,7 +62,7 @@
   }
 }
 .form-mailing {
-  display: flex;
+  text-align: center;
 }
 .footer-lable {
   margin-right: 12px;

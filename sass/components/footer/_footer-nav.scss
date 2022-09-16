@@ -16,19 +16,14 @@
     color: $white-color;
   }
   &-contact {
-    display: flex;
-    align-items: center;
     color: $paragraph-color;
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
   }
   &-first {
-    margin-right: 70px;
-  }
-  &-conteiner {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
+    margin-bottom: 60px;
   }
 }
 .info {

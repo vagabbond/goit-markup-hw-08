@@ -7,14 +7,13 @@
     margin-bottom: 50px;
   }
   &-link {
-    width: 170px;
-    height: 92px;
-
     border: 1px solid $icon-main-color;
     border-radius: 4px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
 
     color: $icon-main-color;
     fill: currentColor;
@@ -33,7 +32,15 @@
 }
 .partner-list {
   display: flex;
-  &__item:not(:last-child) {
-    margin-right: 30px;
+  flex-wrap: wrap;
+  &__item {
+    width: calc((100% - 30px) / 2);
+    height: 92px;
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+    &:nth-child(-n + 4) {
+      margin-bottom: 30px;
+    }
   }
 }

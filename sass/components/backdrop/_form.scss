@@ -12,7 +12,7 @@
   .form-input {
     display: block;
     height: 40px;
-    width: 448px;
+    width: 370px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding-left: 42px;
@@ -45,7 +45,7 @@
 }
 .form-input__comment {
   height: 120px;
-  width: 448px;
+  width: 370px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -91,8 +91,8 @@
     }
   }
   .form-policy {
-    font-size: 14px;
-    line-height: 1.7;
+    font-size: 12px;
+    line-height: 1.4;
     color: $paragraph-color;
     margin-left: 9px;
   }
