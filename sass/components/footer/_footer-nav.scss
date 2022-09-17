@@ -2,6 +2,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $background-color;
+  &-conteiner {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+    }
+  }
   &-logo {
     font-family: 'Raleway', sans-serif;
     color: $second-color;
@@ -24,6 +31,10 @@
   &-first {
     text-align: center;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+      margin-right: auto;
+      margin-left: 76px;
+    }
   }
 }
 .info {

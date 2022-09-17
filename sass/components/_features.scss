@@ -1,8 +1,13 @@
 .features {
-  // &-list {
-  //   display: flex;
-  //   margin-right: -30px;
-  // }
+  &-list {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      &__item:nth-child(2n + 1) {
+        margin-right: 30px;
+      }
+    }
+  }
   &-text {
     color: $paragraph-color;
     font-size: 14px;
@@ -10,6 +15,7 @@
 
     margin-top: 10px;
   }
+
   &-subtitle {
     font-weight: 700;
     font-size: 14px;
@@ -29,4 +35,7 @@
 }
 .features-list__item {
   width: 100%;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
 }

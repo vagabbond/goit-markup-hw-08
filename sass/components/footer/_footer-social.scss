@@ -1,5 +1,8 @@
 .social-footer {
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-right: 89px;
+  }
   &__title {
     text-align: center;
     text-transform: uppercase;
