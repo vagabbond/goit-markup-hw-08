@@ -1,16 +1,25 @@
 .offer {
   background-color: $background-color;
   text-align: center;
-  padding: 118px 60px;
   background: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../../images/hero.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1600px;
+  }
   &-conteiner {
     margin-right: auto;
     margin-left: auto;
+    padding: 118px 60px;
+    @media screen and (min-width: 1200px) {
+      padding-top: 200px;
+      padding-bottom: 200px;
+    }
   }
   &-title {
     color: $white-color;
@@ -26,6 +35,11 @@
     margin-right: auto;
     @media screen and (min-width: 768px) {
       width: 360px;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      width: 696px;
+      line-height: (60/44);
     }
   }
 
@@ -46,6 +60,9 @@
     margin-top: 30px;
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (min-width: 1200px) {
+      width: 216px;
+    }
   }
 }
 .offer-btn {

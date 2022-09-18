@@ -22,6 +22,9 @@
     display: flex;
     margin-left: 88px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 .nav__logo {
   font-family: 'Raleway', sans-serif;
@@ -40,6 +43,10 @@
   @media screen and (min-width: 768px) {
     padding-top: 26px;
     padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
   }
 }
 .menu__pos {
@@ -118,11 +125,18 @@
     &:last-child {
       margin-bottom: 0;
     }
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    &__item:not(:last-child) {
-      margin-right: 50px;
+    @media screen and (min-width: 768px) {
+      display: flex;
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      padding-top: 32px;
+      padding-bottom: 32px;
+      &:not(:last-child) {
+        margin-right: 53px;
+      }
     }
   }
 }
@@ -141,10 +155,17 @@
       margin-bottom: 10px;
     }
   }
-
   @media screen and (min-width: 768px) {
     margin: 0;
     margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+
+    &__item:first-child {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -168,6 +189,10 @@
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: calc(16 / 14);
   }
 }
 .nav-link--current {
@@ -204,6 +229,15 @@
     line-height: calc(14 / 12);
     letter-spacing: 0.02em;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+  }
 }
 
 .mobile-social {
@@ -228,12 +262,23 @@
 .icon-telephone {
   fill: currentColor;
   margin-right: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 .icon-mail {
   width: 14px;
   height: 10px;
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
 }
 .icon-telephone {
   width: 10px;
   height: 14px;
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+    height: 16px;
+  }
 }

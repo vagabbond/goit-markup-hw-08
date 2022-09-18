@@ -10,6 +10,10 @@
 
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: 581px;
+  }
   &-btn {
     position: absolute;
 

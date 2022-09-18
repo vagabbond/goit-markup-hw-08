@@ -3,6 +3,11 @@
   @media screen and (min-width: 768px) {
     margin-right: 89px;
   }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    margin-left: 82px;
+    margin-right: 0;
+  }
   &__title {
     text-align: center;
     text-transform: uppercase;
@@ -12,6 +17,9 @@
     line-height: 1.14;
 
     margin-bottom: 20px;
+    @media screen and (min-width: 1200px) {
+      text-align: start;
+    }
   }
   &__link {
     display: flex;
