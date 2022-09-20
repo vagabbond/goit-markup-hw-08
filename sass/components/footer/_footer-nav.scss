@@ -1,12 +1,17 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
+
   background-color: $background-color;
   &-conteiner {
     @media screen and (min-width: 768px) {
       display: flex;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
       flex-wrap: wrap;
       align-items: baseline;
+      padding-left: 76px;
+      padding-right: 76px;
     }
   }
   &-logo {
@@ -31,9 +36,8 @@
   &-first {
     text-align: center;
     margin-bottom: 60px;
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
       margin-right: auto;
-      margin-left: 76px;
     }
     @media screen and (min-width: 1200px) {
       text-align: start;
@@ -42,19 +46,20 @@
       margin-bottom: 0;
     }
   }
+  &-list {
+    margin-top: -9px;
+    &__items {
+      &:not(:first-child) {
+        margin-top: 9px;
+      }
+    }
+  }
 }
 .info {
   font-style: normal;
   margin-top: 20px;
 }
-.footer-list {
-  margin-top: -9px;
-  &__items {
-    &:not(:first-child) {
-      margin-top: 9px;
-    }
-  }
-}
+
 .google-map {
   font-size: 14px;
   line-height: 1.7;
